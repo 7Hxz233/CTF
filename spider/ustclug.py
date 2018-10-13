@@ -5,6 +5,7 @@ import json
 import requests
 import sys
 import os
+import tomd
 
 website = 'https://hack.lug.ustc.edu.cn'
 
@@ -20,9 +21,7 @@ def parse_challenges(folder, challenges):
             pass
         markdown = ''
         markdown += '#### %s  \n\n' % (name)
-        markdown += '```  \n'
-        markdown += '%s  \n' % (challenge['detail'])
-        markdown += '```  \n'
+        markdown += '%s  \n' % (tomd.Tomd(challenge['detail']).markdown)
         markdown += '#### Hint:  \n\n'
         markdown += '``` \n'
         markdown += '%s  \n' % (challenge['prompt'])
