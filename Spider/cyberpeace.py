@@ -13,9 +13,15 @@ def parse_challenges(folder, challenges):
         name = challenge['task']['title']
         category = challenge['task']['category_name']
         detail = challenge['task']['content']
-        challenge_url = challenge['task']['file_url']['url']
+        if challenge['task']['file_url']:
+            challenge_url = challenge['task']['file_url']['url']
+        else:
+            challenge_url = None
         sovled_count = challenge['solved_count']
-        top_soved = challenge['top_solved']
+        if 'top_solved' in challenge.keys():
+            top_soved = challenge['top_solved']
+        else:
+            top_soved = []
         dynamic_score = challenge['dynamic_score']
         print("[+] Parsing %s" % (name))
         path = '%s/%s/%s' % (folder, category, name)
@@ -42,9 +48,8 @@ def parse_challenges(folder, challenges):
         markdown += '* Soved: %d  \n\n' % (sovled_count)
         for team in top_soved:
             markdown += '  * %s  \n\n' % (team['repr_name'])
-        with open('%s/README.md' % path, 'w') as f:
+        with open('%s/README.md' % path, 'w', encoding='utf-8') as f:
             f.write(markdown)
-        print(markdown)
 
 def download(url, folder):
     print("[+] Download %s to %s" % (url, folder))
