@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Secure PY</title>
+    <link rel="stylesheet" type="text/css" href="/static/bootstrap.min.css">
+    <script src="/static/jquery-3.3.1.min.js"></script>
+    <style>
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+<div class="container" style="padding-top: 5%">
+    <div class="row">
+        <div class="col-md-1">flag_enc:</div>
+        <div class="col-md-6">
+            <pre>{{ flag_enc }}</pre>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-1">key:</div>
+        <div class="col-md-5">
+            <input type="text" class="form-control" id="key" placeholder="type flag_key here">
+        </div>
+        <div class="col-md-1">
+            <button class="btn btn-info" onclick="check()">getflag</button>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-1">
+            <div class="alert" role="alert"></div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    function check() {
+        $.post({
+            url: "/getflag",
+            data: JSON.stringify({key: $("#key")[0].value}),
+            dataType: 'json',
+            contentType: 'application/json;charset=utf-8',
+            cache: false,
+            success: function (data) {
+                if(!data['result']){
+                    $(".alert").html("Key Error").attr("class","alert alert-danger");
+                }else{
+                    $(".alert").html(data['flag']).attr("class","alert alert-success");
+                }
+            }
+        });
+    }
+</script>
+</html>

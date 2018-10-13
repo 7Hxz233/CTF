@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.4.min.js"></script>
+    <script>
+    $(document).ready(function(){
+            var query_data = {'query': '{ getscorebyid(id: "GE======"){ id name score } }'}
+            var btn = $('#query');
+            btn.click(function(){
+                $.post('/graphql', query_data, function(result){
+                    alert(result);
+                })
+            });
+        })
+    </script>
+</head>
+<body>
+    <button id='query'>Query your score</button>
+</body>
+</html>
