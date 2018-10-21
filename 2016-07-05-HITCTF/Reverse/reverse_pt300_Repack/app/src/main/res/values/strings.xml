@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Repack</string>
+    <string name="flag">Hello world!</string>
+    <string name="DES">DES</string>
+    <string name="NULL">NULL</string>
+    <string name="type">DES/CBC/PKCS5Padding</string>
+    <string name="trust1">0303061104030304030802070505120709111007</string>
+    <string name="trust2">031210120810040312021211070811050607</string>
+    <string name="trust3">030412030407030803020311100410100303</string>
+</resources>

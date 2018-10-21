@@ -1,0 +1,3 @@
+title:你能登录吗？
+description:此系统自有管理员在用，不要重复注册哦~~
+flag:hitctf{I_Wi1l_iMprO_v3_M4_pw}

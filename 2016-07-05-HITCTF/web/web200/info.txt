@@ -1,0 +1,3 @@
+title:新开发的系统
+description:这系统真的还没什么功能
+flag:hitctf{3a5ieSt_sQ1i_iNj3C_7i0n}

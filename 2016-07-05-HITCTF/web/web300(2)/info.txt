@@ -1,0 +1,3 @@
+title:SQL
+description:ip/login.php
+flag:hitctf{5eC0nD_0rd3r_iNj3C7i0N_abcd}

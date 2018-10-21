@@ -1,0 +1,6 @@
+题目：来自新大陆（From new world)
+题目描述： （→自动播放的BGM）来听一首歌吧：<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=2&id=4430659&auto=1&height=66"></iframe>
+<code>
+A ofmldrbf co ab .qy.be.e mgocjan jrmlrocycrb cb <.oy.pb jnaoocjan mgocjw mroy ruy.b ,pcyy.b xf jrmlro.po urp rpjd.oypav Anydrgid yd. y.pm dao dae mabf m.abcbio uprm cyo rpcicbo cb yd. abjc.by Ip..t .paw xf yd. nay. 18yd j.bygpf yd. ,rpe dae yat.b rb yd. m.abcbi jrmmrb yreafS a ,rpt gogannf jrbocoycbi ru mgnycln. ecoycbjy o.jycrbo rp mrk.m.byow ruy.b urgpw ,cyd yd. ucpoy mrk.m.by cb orbaya urpmvOfmldrbc.o ap. ojrp.e urp oypcbi (kcrncbw kcrnaw j.nnr abe ergxn. xaoo)w xpaoow ,rre,cbew abe l.pjgoocrb cboypgm.byo ,dcjd anyri.yd.p bgmx.p axrgy 30–100 mgocjcabov Ofmldrbc.o ap. bryay.e cb a mgocjan ojrp.w ,dcjd jrbyacbo ann yd. cboypgm.by lapyov Rpjd.oypan mgocjcabo lnaf uprm lapyo ,dcjd jrbyacb hgoy yd. bryay.e mgocj urp yd.cp cboypgm.byv A omann bgmx.p ru ofmldrbc.o anor jrbyacb krjan lapyo (.vivw X..ydrk.b-o Bcbyd Ofmldrbf)v
+Anydrgid c dak. ncoy.b.e nryo ru ofmldrbc.ow xgy c dak. yr oaf DCYJYU?Ek0pato{3fmld0bc.o{ap.{ip8+ v
+</code>

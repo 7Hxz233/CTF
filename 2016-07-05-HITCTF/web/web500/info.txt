@@ -1,0 +1,3 @@
+title:新手写网站
+description:翟老师给分配任务让我写网站，我就自学啊，写几个功能怎么这么难啊！ip/user.php?id=1
+flag:hitctf{A1L7_hiN65_ar3_5Ma1I_7RlCk5}
