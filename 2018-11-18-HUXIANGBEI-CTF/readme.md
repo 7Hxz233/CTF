@@ -10,7 +10,8 @@
 
 find interesting data using this [tool](https://www.cgsecurity.org/wiki/TestDisk_Download)
 
-![Alt text](./img/Screenshot from 2018-11-18 10-50-27.png)
+![123](img/Screenshot%20from%202018-11-18%2010-50-27.png)
+
 
 extract data from disk
 ```bash
@@ -125,7 +126,7 @@ Number of decrypted WPA  packets       383
 
 > get flag: flag{H4lf_1s_3n0ugh}
 
-![Alt text](./img/Screenshot from 2018-11-18 11-56-38.png)
+![image](./img/Screenshot%20from%202018-11-18%2011-56-38.png)
 
 #### sign in
 
@@ -137,11 +138,11 @@ Number of decrypted WPA  packets       383
 
 这个图片末尾有串字符,strings 发现有三张图片.用010补全png图片前面八位bite.得到两张以第一张图为图种的图.一共三张图.
 
-![Screenshot from 2018-11-18 20-20-12](./img/Screenshot from 2018-11-18 20-20-12.png)
+![image](./img/Screenshot%20from%202018-11-18%2020-20-12.png)
 
 图片分析:zsteg
 
-![Screenshot from 2018-11-18 20-24-26](./img/Screenshot from 2018-11-18 20-24-26.png)
+![image](./img/Screenshot%20from%202018-11-18%2020-24-26.png)
 
 > 两个相同图片,2.png zsteg存数据,则1.png存在flag的另一半,然后文件末尾也是flag一部分,盲水印隐写
 > ```bash
@@ -150,7 +151,7 @@ Number of decrypted WPA  packets       383
 > ```
 > 得到flag的末尾部分,刚开始测试c4a50}错误,其实是e4a50}
 
-![Screenshot from 2018-11-18 20-28-22](./img/Screenshot from 2018-11-18 20-28-22.png)
+![image](./img/Screenshot%20from%202018-11-18%2020-28-22.png)
 
 >最终flag: 
 >hxb2018{b03bca1dbca1662e632ffa5bbefe4a50}
@@ -228,7 +229,7 @@ with open('./solve.c', "w+") as f:
 
 编译生成的c文件，运行可以在半个小时内得到flag
 
-![pasted image 0](./img/pasted image 0.png)
+![image](./img/pasted%20image%200.png)
 
 #### Replace
 
@@ -261,7 +262,7 @@ for i in x2:
 			break
 ```
 
-![pasted image 0 (1)](./img/pasted image 0 (1).png)
+![image](./img/pasted%20image%200%20(1).png)
 
 ### CRYPTO
 
@@ -347,7 +348,7 @@ p.interactive()
 
 
 
-![pasted image 0 (2)](./img/pasted image 0 (2).png)
+![image](./img/pasted%20image%200%20(2).png)
 
 #### Read Flag
 
@@ -358,7 +359,7 @@ p.interactive()
 > 5. 下载该二进制程序发现逻辑仅仅是读取当前文件夹下的 flag 文件
 > 6. 通过 ssrf 读取即可
 
-![pasted image 0 (3)](./img/pasted image 0 (3).png)
+![image](./img/pasted%20image%200%20(3).png)
 
 #### Xmeo
 
@@ -380,7 +381,7 @@ page.addCookie({
 
 
 
-![pasted image 0 (4)](./img/pasted image 0 (4).png)
+![image](./img/pasted%20image%200%20(4).png)
 
 #### MyNote
 
@@ -394,8 +395,8 @@ curl 'http://39.108.167.229/index.php/picture' -H 'Cookie: Picture=YToxOntpOjA7c
 <?php $flag = "hxb2018{87f23af96f20d8cb284c578b4c08ad03}"; echo "flag{This_flag_iS_A_F4ke_flag}";
 ```
 
-![pasted image 0 (5)](./img/pasted image 0 (5).png)
+![image](./img/pasted%20image%200%20(5).png)
 
-![pasted image 0 (6)](./img/pasted image 0 (6).png)
+![image](./img/pasted%20image%200%20(6).png)
 
 `flag:flag{This_flag_iS_A_F4ke_flag}`
