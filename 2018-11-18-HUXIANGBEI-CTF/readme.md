@@ -1,5 +1,4 @@
 # 湖湘杯复赛题解 by 7HxzZ
-* [湖湘杯复赛题解 by 7HxzZ](#湖湘杯复赛题解-by-7hxzz)
  * [MISC](#misc)
     * [disk](#disk)
     * [MISC  Flow](#misc--flow)
