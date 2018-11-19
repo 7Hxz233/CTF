@@ -1,5 +1,23 @@
 # 湖湘杯复赛题解 by 7HxzZ
-[TOC]
+* [湖湘杯复赛题解 by 7HxzZ](#湖湘杯复赛题解-by-7hxzz)
+ * [MISC](#misc)
+    * [disk](#disk)
+    * [MISC  Flow](#misc--flow)
+    * [sign in](#sign-in)
+    * [Hidden Write](#hidden-write)
+ * [REVERSE](#reverse)
+    * [HighwayHash64](#highwayhash64)
+    * [Replace](#replace)
+ * [CRYPTO](#crypto)
+    * [common crypto](#common-crypto)
+ * [PWN](#pwn)
+    * [Regex Format](#regex-format)
+ * [WEB](#web)
+    * [Code check](#code-check)
+    * [Read Flag](#read-flag)
+    * [Xmeo](#xmeo)
+    * [MyNote](#mynote)
+
 
 ### MISC
 
