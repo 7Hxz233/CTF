@@ -1,0 +1,15 @@
+{% if flag %}
+    This website also have another page named mysecrecy_directory.......
+{% endif %}
+
+
+
+{% extends 'base.html' %}
+{% block container %}
+{#{% autoescape false %}#}
+
+
+{{ xxx|safe  }}
+{#{% endautoescape %}#}
+
+{% endblock %}

