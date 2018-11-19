@@ -4,14 +4,14 @@
 This repo stores all CTF challenges and writeup we have participated
 ```
 
-#### Alias
+#### Aliases
 * Lilac
 * Vasif
 * 7HxzZ
 
 #### Games
 
-| Name            | Data       | Duration | Rank | Mode | 
+| Name            | Date       | Duration | Rank | Mode | 
 | :---------------: | :----------: | :--------: | :----: | :-: | 
 | XDCTF-FINAL | 2017-10-31 | 1D |:1st_place_medal:| AWD |
 | InCTF           | 2018-10-06 | 1D       |      | Jeopardy |
