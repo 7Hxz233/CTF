@@ -1,6 +1,5 @@
+# 湖湘杯复赛题解 by 7HxzZ
 [TOC]
-
-## 湖湘杯复赛题解 by 7HxzZ
 
 ### MISC
 
