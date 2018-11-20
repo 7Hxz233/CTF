@@ -1,7 +1,7 @@
 # CTF
 
 ```
-This repo stores all CTF challenges and writeup we have participated
+This repo stores all challenges and writeups of CTFs we have participated in
 ```
 
 #### Aliases
